@@ -1,0 +1,103 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");*/
+/*@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");*/
+/*@import url("https://fonts.googleapis.com/css2?family=Manjari:wght@700&display=swap");*/
+/* */
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Jost', sans-serif;
+ }
+body{
+    background: url("./img/desktop brand.jpg") no-repeat top center;
+    background-size: cover;
+    height: 100vh;/*divides the window into 100 equal divisions*/
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+}
+.contact-form{
+    max-width: 600px; /*this makes it responsive*/
+    margin: 0 auto; /*places it at the center*/
+    background: rgba(0,0,0,0.8);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 20px;
+}
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+.input-fields, .msg{
+    width: 48%;
+}
+.input-fields, .input, .msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 20px;
+    color: #c5ecfd;
+    width: 100%;
+}
+.input-fields{
+    border-bottom: none;
+}
+
+.msg textarea{
+    height: 212px;
+}
+::-webkit-input-placeholder{
+color: #c5ecfd;
+}
+::-moz-input-placeholder{
+    color: #c5ecfd;
+}
+::-ms-input-placeholder{
+    color: #c5ecfd;
+}
+::-webkit-input-placeholder{
+    color: #c5ecfd;
+}
+::-moz-input-placeholder{
+    color: #c5ecfd;
+}
+::-ms-input-placeholder{
+    color: #c5ecfd;
+}
+.btn{
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.btn:hover {
+    background:#39b8 ;
+    transition: all .25s;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-form{
+        flex-direction: column;
+    }
+    .msg textarea{
+        height: 80px;
+    }
+    .input-fields, .msg{
+      width: 100%;
+    }
+}
+
+
+
+
+
+
+
